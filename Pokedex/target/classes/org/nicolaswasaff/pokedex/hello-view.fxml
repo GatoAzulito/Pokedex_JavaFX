@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.nicolaswasaff.pokedex.controller.PokedexController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <ComboBox fx:id="categoriaComboBox" maxWidth="Infinity" promptText="Categoría"/>
+    <HBox alignment="TOP_CENTER" spacing="2">
+        <TextField fx:id="txtNombre" promptText="nombre" />
+        <TextField fx:id="txtEdicion" promptText="año edición" />
+        <TextField fx:id="txtCantidad" promptText="cantidad" />
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" spacing="2">
+        <TextField fx:id="txtElemento" promptText="elemento" />
+        <CheckBox fx:id="brillanteCheckBox" text="Shiny"/>
+        <CheckBox fx:id="evolucionActivaCheckBox" text="Evoluciona"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT" spacing="2">
+        <TextField fx:id="txtEnergias" promptText="cantidad energias" />
+        <Button fx:id="btnRegistrar" text="Registrar" onAction="#onWip"/>
+        <Button fx:id="btnEliminar" text="Eliminar" onAction="#onWip"/>
+    </HBox>
+
+    <Label fx:id="mensajes" wrapText="true"/>
+
+    <TableView fx:id="cartasTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colNombre" text="NOMBRE"/>
+            <TableColumn fx:id="colAnio" text="AÑO"/>
+            <TableColumn fx:id="colCantidad" text="CANTIDAD"/>
+            <TableColumn fx:id="colCategoria" text="CATEGORIA"/>
+            <TableColumn fx:id="colValor" text="VALOR EST."/>
+        </columns>
+    </TableView>
+
+</VBox>

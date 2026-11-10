@@ -1,0 +1,8 @@
+org\nicolaswasaff\pokedex\model\Carta.class
+org\nicolaswasaff\pokedex\model\Evolucionable.class
+module-info.class
+org\nicolaswasaff\pokedex\controller\PokedexController.class
+org\nicolaswasaff\pokedex\Launcher.class
+org\nicolaswasaff\pokedex\PokedexApplication.class
+org\nicolaswasaff\pokedex\model\CartaEnergia.class
+org\nicolaswasaff\pokedex\model\CartaPokemon.class
